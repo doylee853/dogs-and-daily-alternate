@@ -15,6 +15,7 @@ const Dog = require('./model/dog');
 
 var dogName = "Jimothy";
 var picture = "https://scontent-lga3-2.xx.fbcdn.net/v/t1.0-9/47682288_1961732107466121_2171353353949282304_o.jpg?_nc_cat=109&ccb=2&_nc_sid=cdbe9c&_nc_ohc=1sf-AEUnVuIAX-I71dT&_nc_ht=scontent-lga3-2.xx&oh=946586978b26337da06cdafac2b45c95&oe=6039BCB9";
+var quote = " is here to tell you that you're doing a great job, even if things are looking bleak. There will always be better times ahead, and you don't want to miss those.";
 
 
 const app = express();
@@ -34,7 +35,8 @@ app.get('/',function(req, res) {
     // res.sendFile(path.join(__dirname, './views/index.html'));
     res.render("main-page.ejs",{
         dogName: dogName,
-        picture: picture
+        picture: picture,
+        quote: quote
     });
 });
 
@@ -66,6 +68,7 @@ app.get('/',function(req, res) {
 
 var dogNames = ['Kota', 'Finn', 'Little Dog', 'Jimothy'];
 var dogPictures = ['https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/13613634_10153891997737672_3624086464354231983_o.jpg?_nc_cat=102&ccb=2&_nc_sid=cdbe9c&_nc_ohc=LMp6Cg_2opwAX9naVhf&_nc_ht=scontent-lga3-1.xx&oh=5704af2ae9ed4ed337e915489c371cab&oe=60399166', 'https://scontent-lga3-2.xx.fbcdn.net/v/t1.0-9/33994826_10212553022881579_5701784890366754816_o.jpg?_nc_cat=103&ccb=2&_nc_sid=730e14&_nc_ohc=P2N50s9Rt6QAX_gLw5D&_nc_ht=scontent-lga3-2.xx&oh=9ba0d1368c5162e9d94119a55cd8b340&oe=6039C129', 'https://scontent-lga3-2.xx.fbcdn.net/v/t1.0-9/47420117_1961727964133202_1600867708608446464_o.jpg?_nc_cat=107&ccb=2&_nc_sid=cdbe9c&_nc_ohc=2UbxOpL6iVIAX9jaf0e&_nc_ht=scontent-lga3-2.xx&oh=2d91c3d53d9e8e1c250cd14ac18d5a9c&oe=603C29ED', 'https://scontent-lga3-2.xx.fbcdn.net/v/t1.0-9/47682288_1961732107466121_2171353353949282304_o.jpg?_nc_cat=109&ccb=2&_nc_sid=cdbe9c&_nc_ohc=1sf-AEUnVuIAX-I71dT&_nc_ht=scontent-lga3-2.xx&oh=946586978b26337da06cdafac2b45c95&oe=6039BCB9'];
+var quotes = [" is here to remind you to go easy on yourself today. Take some time to get a treato, enjoy the outside (if it's nice out), and take your dog on a walk. Maybe get him a treat too. ", " wants to wish you good luck today. Whether it be with school or work or anything else, keep killing it. And that it's time to get another dog :)", " is here to say that he likes your shirt, you should wear it more often. And he wants to remind you that it's always okay to talk to people you trust when you're feeling down or depressed, even if it's just your dog. They'll listen", " is here to tell you that you're doing a great job, even if things are looking bleak. There will always be better times ahead, and more dogs to see, and you don't want to miss those."];
 var counter = 0;
 
 setInterval(function() {
@@ -75,6 +78,7 @@ setInterval(function() {
     }
     dogName = dogNames[counter];
     picture = dogPictures[counter];
+    quote = quotes[counter];
 }, 10000);
 
 
