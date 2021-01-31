@@ -74,7 +74,7 @@ setInterval(function() {
         counter = 0;
     }
     dogName = dogNames[counter];
-    picture = dogPictures[0];
+    picture = dogPictures[counter];
 }, 10000);
 
 
