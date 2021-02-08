@@ -79,7 +79,7 @@ setInterval(function() {
     dogName = dogNames[counter];
     picture = dogPictures[counter];
     quote = quotes[counter];
-}, 86400000);
+}, 30000);
 
 
 // setInterval(function() {db.collection("dogs").findOne({}, function(err, result){
