@@ -14,7 +14,7 @@ const DogModel = require('./model/dog');
 const Dog = require('./model/dog');
 
 var dogName = "Little Dog";
-var picture = "https://scontent-lga3-2.xx.fbcdn.net/v/t1.0-9/47420117_1961727964133202_1600867708608446464_o.jpg?_nc_cat=107&ccb=2&_nc_sid=cdbe9c&_nc_ohc=2UbxOpL6iVIAX9jaf0e&_nc_ht=scontent-lga3-2.xx&oh=2d91c3d53d9e8e1c250cd14ac18d5a9c&oe=603C29ED";
+var picture = "https://www.thesprucepets.com/thmb/fwkpUm8XkRQgNyy3vqOkTY3oGhc=/3797x2848/smart/filters:no_upscale()/you-have-called-me-dwarf-hamster-6-weeks-old-184337772-5848b1065f9b58dccc9fc10c.jpg";
 var quote = " is a hamster, but has the heart of a dog. He is here to say that he likes your shirt, you should wear it more often. And he wants to remind you that it's always okay to talk to people you trust when you're feeling down or depressed, even if it's just your dog. They'll listen!";
 
 
